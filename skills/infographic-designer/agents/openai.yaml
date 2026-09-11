@@ -1,0 +1,4 @@
+interface:
+  display_name: "Infographic Designer"
+  short_description: "Create polished, editable infographics"
+  default_prompt: "Use $infographic-designer to design an infographic from my topic and brief."

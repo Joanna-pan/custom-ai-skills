@@ -1,0 +1,20 @@
+# Operating system and editor files
+.DS_Store
+Thumbs.db
+Desktop.ini
+.idea/
+.vscode/
+
+# Local secrets and generated work
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+*.pfx
+*.p12
+output/
+.build/
+__pycache__/
+*.pyc
+
