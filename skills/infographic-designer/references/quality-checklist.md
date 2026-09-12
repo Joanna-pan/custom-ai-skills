@@ -45,6 +45,8 @@ Run this checklist against the rendered artifact, not only against source code o
 - PSD canvas dimensions, color mode, transparency, stacking order, and clipping match the approved output.
 - Generated imagery contains no accidental text, malformed symbols, or misleading objects.
 - Source links and credits are present when required.
+- In OpenClaw WebChat, each promised file is delivered as a real reply attachment rather than only a tool-result preview or local-only link.
+- Temporary preview servers and background render processes are stopped before the final answer unless the user explicitly asked to keep them running.
 
 ## Visual Inspection Passes
 
@@ -54,5 +56,6 @@ Run this checklist against the rendered artifact, not only against source code o
 4. Open or render the PPTX independently; do not assume the export proves editability.
 5. Open the PSD independently, inspect its layer panel, toggle each major group, and compare a composite render with the approved PNG.
 6. After a palette-only revision, compare geometry to the approved version and confirm that only intended color changes occurred in every default format.
+7. In OpenClaw, confirm that deliverable paths exist before emitting attachment directives and that no temporary background process remains after delivery.
 
 Do not deliver until blocking issues are fixed. If a limitation cannot be fixed with available tools, state it precisely and provide the best production-ready fallback.

@@ -25,7 +25,8 @@ Turn information into a truthful, readable, compositionally coherent infographic
 5. Read [content-and-sources.md](references/content-and-sources.md) whenever facts, research, statistics, quotations, or supplied source material are involved.
 6. Read [color-system.md](references/color-system.md) when choosing, presenting, or revising a palette.
 7. Read [psd-delivery.md](references/psd-delivery.md) whenever producing or revising the default PSD deliverable.
-8. Always use [quality-checklist.md](references/quality-checklist.md) before delivery.
+8. Read [openclaw-delivery.md](references/openclaw-delivery.md) when the current runtime or destination is OpenClaw WebChat or Control UI.
+9. Always use [quality-checklist.md](references/quality-checklist.md) before delivery.
 
 ## Core Workflow
 
