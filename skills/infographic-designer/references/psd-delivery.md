@@ -1,6 +1,6 @@
 # Layered PSD Delivery
 
-Use this contract whenever creating or revising the default Photoshop deliverable.
+Use this contract whenever creating or revising a requested Photoshop deliverable after visual approval, or when the user explicitly asks to skip the PNG review stage.
 
 ## Required Structure
 

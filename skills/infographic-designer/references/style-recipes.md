@@ -11,14 +11,15 @@ For any matrix style, define:
 3. Palette: named roles rather than vague color mood.
 4. Information structure: primary composition and reading path.
 5. Content density: node count and label length.
-6. Production boundary: what is generated as imagery and what remains editable.
-7. Avoid list: artifacts or clichés that would weaken the chosen direction.
+6. Image production: for rendered, illustrative, material, or dimensional styles, use `openai/gpt-image-2`, or the best available genuine image-generation model if unavailable.
+7. Production boundary: what is generated as imagery and what remains editable.
+8. Avoid list: artifacts or clichés that would weaken the chosen direction, including generated words and programmatic pseudo-3D.
 
 ## Frequently Used Recipes
 
 ### Пластилиновая 3D-графика
 
-Soft clay-like volumes, tactile 3D icons, friendly characters or objects, gentle shadows, a warm modern palette, and a small number of large information modules. Keep typography clean and editable. Avoid toy-like clutter, excessive gloss, and tiny labels.
+Create soft clay-like volumes and tactile 3D icons with a genuine image-generation model, using friendly characters or objects, gentle shadows, a warm modern palette, and a small number of large information modules. Keep typography clean and editable outside the generated imagery. Avoid toy-like clutter, excessive gloss, tiny labels, and SVG-built pseudo-3D.
 
 ### Брутализм
 
@@ -54,7 +55,7 @@ Square album-cover composition with a central image, expressive title, print tex
 
 ### Изометрия
 
-Build a small coherent 3D world viewed at a consistent isometric angle. Connect objects, people, routes, and processes with legible callouts and arrows. Avoid inconsistent perspective and decorative objects without explanatory purpose.
+Generate a small coherent 3D world at a consistent isometric angle with a genuine image-generation model. Add editable callouts, arrows, and exact labels during layout. Avoid inconsistent perspective, generated text, programmatic pseudo-3D, and decorative objects without explanatory purpose.
 
 ### Музейная экспозиция
 
@@ -110,4 +111,3 @@ Present a budget, business model, cash flow, or investment structure as an annot
 - Combine compatible traits, not full aesthetic systems. Example: editorial grid + paper-cut illustration.
 - Keep brand, audience, and medium above novelty.
 - Translate requests for a living artist into non-identifying traits such as palette, texture, composition, or historical movement.
-

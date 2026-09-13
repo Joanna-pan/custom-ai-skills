@@ -11,8 +11,9 @@ Turn information into a truthful, readable, compositionally coherent infographic
 
 - Work adaptively: infer low-risk missing choices and ask only when a missing answer materially changes meaning, audience, format, or publication constraints.
 - Use a modern editorial + data-journalism visual language when no style is specified.
-- Deliver `PNG + PPTX + layered PSD` by default unless the user explicitly opts out of a format. Add PDF, SVG, or HTML when the requested medium benefits from it.
+- Deliver a rendered PNG draft first. After the user approves the visual, ask whether they need PPTX, layered PSD, or both, unless the required editable formats are already clear. Build those formats from the approved version. Honor an explicit request to skip review and produce final formats immediately.
 - Keep information-bearing text, numbers, labels, arrows, and charts editable. Use image generation for illustration, texture, objects, scenes, or backgrounds rather than for final body text.
+- For styles that depend on rendered materials, depth, or illustration, use `openai/gpt-image-2` for the visual layer. If it is unavailable, use the best available genuine image-generation model and disclose the model used. Do not imitate the requested style with programmatic SVG, gradients, or pseudo-3D.
 - A flattened image saved with a `.psd` extension is not a layered PSD. Never present it as one.
 - Never invent facts, statistics, dates, quotes, sources, or causal claims.
 
@@ -21,12 +22,13 @@ Turn information into a truthful, readable, compositionally coherent infographic
 1. Read [brief-and-workflow.md](references/brief-and-workflow.md) to normalize the request and choose simple or complex mode.
 2. Read [morphological-matrix.md](references/morphological-matrix.md) when the user wants options, has supplied matrix values, or important axes are missing.
 3. Read [composition-selection.md](references/composition-selection.md) before choosing or validating the spatial structure.
-4. Read [style-recipes.md](references/style-recipes.md) when building an art direction, production prompt, or one of the user's recurring styles.
-5. Read [content-and-sources.md](references/content-and-sources.md) whenever facts, research, statistics, quotations, or supplied source material are involved.
-6. Read [color-system.md](references/color-system.md) when choosing, presenting, or revising a palette.
-7. Read [psd-delivery.md](references/psd-delivery.md) whenever producing or revising the default PSD deliverable.
-8. Read [openclaw-delivery.md](references/openclaw-delivery.md) when the current runtime or destination is OpenClaw WebChat or Control UI.
-9. Always use [quality-checklist.md](references/quality-checklist.md) before delivery.
+4. Read [production-method.md](references/production-method.md) whenever creating visual assets or working from a reference image.
+5. Read [style-recipes.md](references/style-recipes.md) when building an art direction, production prompt, or one of the user's recurring styles.
+6. Read [content-and-sources.md](references/content-and-sources.md) whenever facts, research, statistics, quotations, or supplied source material are involved.
+7. Read [color-system.md](references/color-system.md) when choosing, presenting, or revising a palette.
+8. Read [psd-delivery.md](references/psd-delivery.md) whenever producing or revising a requested PSD deliverable.
+9. Read [openclaw-delivery.md](references/openclaw-delivery.md) when the current runtime or destination is OpenClaw WebChat or Control UI.
+10. Always use [quality-checklist.md](references/quality-checklist.md) before delivery.
 
 ## Core Workflow
 
@@ -40,12 +42,12 @@ Build the information architecture before styling. Separate title, core takeaway
 
 ### 3. Choose The Interaction Mode
 
-- **Simple / direct:** For a small, low-risk visual or an explicit request such as "без обсуждения", infer the remaining brief, make one concept, render, inspect, and deliver.
+- **Simple / direct:** For a small, low-risk visual or an explicit request such as "без обсуждения", infer the remaining brief, make one concept, render and inspect one PNG draft, and deliver it without a concept-approval pause.
 - **Complex / collaborative:** For processes, dense or factual material, multiple hierarchy levels, uncertain data, or conflicting choices, propose 2-3 concepts and pause for approval before production. Present them as `Рекомендую -> Почему -> Альтернативы -> Риски -> Когда выбрать`.
 
 ### 4. Produce Deliberately
 
-Use one approved content model for every output. Build the editable layout first or in parallel with generated assets. Do not bake critical copy into generated imagery. Keep the PSD organized into meaningful groups and retain editable text layers when the available workflow supports them. When a required renderer is unavailable, return the deliverables that can be verified plus a precise limitation and production-ready fallback; never claim that a missing or flattened artifact is a layered PSD.
+Use one approved content model for every output. Generate or compose the PNG review draft first. After visual approval, build requested editable formats from that approved content and geometry. Do not bake critical copy into generated imagery. Keep the PSD organized into meaningful groups and retain editable text layers when the available workflow supports them. When a required renderer is unavailable, return the deliverables that can be verified plus a precise limitation and production-ready fallback; never claim that a missing or flattened artifact is a layered PSD.
 
 ### 5. Inspect The Artifact
 

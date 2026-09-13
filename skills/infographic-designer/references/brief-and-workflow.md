@@ -7,15 +7,16 @@ The five morphological axes are the creative core, but they sit inside a small p
 1. Topic and communication goal.
 2. Audience and reading context.
 3. Source status: supplied content/data, research required, or conceptual illustration.
-4. Topic pattern: preferably one primary and optionally one secondary.
-5. Composition: one primary and optionally one local secondary structure.
-6. Format and size.
-7. Visual style: one primary and optionally one supporting influence.
-8. Volume: both item count and depth.
-9. Palette or brand constraints, when any.
-10. Language, deadline, and required deliverables.
+4. Reference intent, when a reference is supplied: close match, selected traits, or inspiration only.
+5. Topic pattern: preferably one primary and optionally one secondary.
+6. Composition: one primary and optionally one local secondary structure.
+7. Format and size.
+8. Visual style: one primary and optionally one supporting influence.
+9. Volume: both item count and depth.
+10. Palette or brand constraints, when any.
+11. Language, deadline, and required deliverables.
 
-Do not demand all ten fields. Infer defaults when the consequence is reversible. Ask when audience, format, factual basis, confidentiality, or a major structural ambiguity blocks responsible production.
+Do not demand all eleven fields. Infer defaults when the consequence is reversible. Ask when audience, format, factual basis, confidentiality, or a major structural ambiguity blocks responsible production.
 
 ## Complexity Decision
 
@@ -49,25 +50,33 @@ Use **complex/collaborative mode** when any high-impact condition applies:
    - **Когда выбрать**
 4. For each direction, name the primary composition, reading path, style, palette character, and expected density.
 5. Pause for approval.
-6. Produce the editable artifact and export.
-7. Run visual and factual QA.
+6. Produce and inspect the PNG review draft.
+7. Revise the PNG until the visual is approved.
+8. Ask whether the user needs PPTX, layered PSD, or both, unless already specified.
+9. Build the selected editable formats from the approved version and run final visual and factual QA.
 
 ## Simple Mode Sequence
 
 1. Infer missing low-risk choices.
 2. Build one concise information hierarchy.
-3. Produce one visual direction without an approval pause.
-4. Render and inspect.
-5. Deliver the artifact and a compact note listing inferred choices.
+3. Produce one visual direction without a concept-approval pause.
+4. Render and inspect the PNG review draft.
+5. Deliver the PNG and a compact note listing inferred choices.
+6. After visual approval, ask whether the user needs PPTX, layered PSD, or both, unless already specified, then build the selected formats.
 
 ## Output Contract
 
-Default package:
+Stage 1 - visual review:
 
-- Editable `.pptx` source.
-- Matching `.png` export at the requested or inferred dimensions.
-- Genuine layered `.psd` with logical groups and separately editable content where the available production path supports it.
-- Source list and structured long description for researched or complex factual work.
+- One `.png` draft at the requested or inferred dimensions.
+- Source list and structured long description when required for researched or complex factual work.
+- No PPTX or PSD production yet unless the user explicitly asks to skip visual review.
+
+Stage 2 - approved production:
+
+- Ask whether the user needs editable `.pptx`, genuine layered `.psd`, or both. If the user already specified the formats, do not ask again.
+- Build only the selected editable formats from the approved content, geometry, and palette.
+- Export the final matching `.png` when revisions were made during approval.
 
 Optional outputs:
 
@@ -78,4 +87,4 @@ Optional outputs:
 
 Use descriptive filenames with topic, format, and revision. Avoid overwriting an approved version during palette or copy revisions.
 
-The PSD is part of the default package, not an optional convenience export. If a genuine layered PSD cannot be created or verified in the current environment, do not substitute a flattened PSD. Deliver the verified PNG and PPTX, explain the exact PSD limitation, and provide separated source assets or a reconstruction specification when useful.
+If a requested genuine layered PSD cannot be created or verified in the current environment, do not substitute a flattened PSD. Deliver the verified formats that can be produced, explain the exact PSD limitation, and provide separated source assets or a reconstruction specification when useful.

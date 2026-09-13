@@ -36,13 +36,17 @@ Run this checklist against the rendered artifact, not only against source code o
 
 ## Production
 
+- The PNG review draft was rendered and inspected before editable formats were produced, unless the user explicitly skipped review.
+- When the requested style depends on generated imagery, the actual full image-generation model was used and recorded; `openai/gpt-image-2` was preferred when available.
+- Rendered, illustrative, material, or dimensional styling was not silently replaced by programmatic SVG, primitive icons, gradients, or pseudo-3D.
+- When a reference was supplied, its fidelity mode was confirmed or already explicit, and the result follows only the approved traits.
 - PNG dimensions match the brief.
-- PPTX elements intended for editing are actually editable.
-- PSD opens successfully and contains multiple meaningful, named layers or groups rather than one flattened composite.
-- PSD groups separate `Text`, `Data-Charts`, `Illustrations`, `Decor`, `Background`, and `Sources` when those content classes exist.
-- Text remains native and editable when the available workflow supports Photoshop text layers. Otherwise, each text block remains separate in `Text` and the rasterized-text limitation is disclosed.
-- PNG, PPTX, and PSD contain the same approved content, geometry, and palette.
-- PSD canvas dimensions, color mode, transparency, stacking order, and clipping match the approved output.
+- When PPTX is requested, elements intended for editing are actually editable.
+- When PSD is requested, it opens successfully and contains multiple meaningful, named layers or groups rather than one flattened composite.
+- When PSD is requested, groups separate `Text`, `Data-Charts`, `Illustrations`, `Decor`, `Background`, and `Sources` when those content classes exist.
+- When PSD is requested, text remains native and editable when the available workflow supports Photoshop text layers. Otherwise, each text block remains separate in `Text` and the rasterized-text limitation is disclosed.
+- Every produced format contains the same approved content, geometry, and palette.
+- When PSD is requested, canvas dimensions, color mode, transparency, stacking order, and clipping match the approved output.
 - Generated imagery contains no accidental text, malformed symbols, or misleading objects.
 - Source links and credits are present when required.
 - In OpenClaw WebChat, each promised file is delivered as a real reply attachment rather than only a tool-result preview or local-only link.
@@ -53,9 +57,9 @@ Run this checklist against the rendered artifact, not only against source code o
 1. Inspect at 100% scale for alignment, text rendering, and connector accuracy.
 2. Inspect as a thumbnail for hierarchy and immediate comprehension.
 3. Inspect at the target mobile/desktop/print context.
-4. Open or render the PPTX independently; do not assume the export proves editability.
-5. Open the PSD independently, inspect its layer panel, toggle each major group, and compare a composite render with the approved PNG.
-6. After a palette-only revision, compare geometry to the approved version and confirm that only intended color changes occurred in every default format.
+4. When PPTX is produced, open or render it independently; do not assume the export proves editability.
+5. When PSD is produced, open it independently, inspect its layer panel, toggle each major group, and compare a composite render with the approved PNG.
+6. After a palette-only revision, compare geometry to the approved version and confirm that only intended color changes occurred in every produced format.
 7. In OpenClaw, confirm that deliverable paths exist before emitting attachment directives and that no temporary background process remains after delivery.
 
 Do not deliver until blocking issues are fixed. If a limitation cannot be fixed with available tools, state it precisely and provide the best production-ready fallback.
