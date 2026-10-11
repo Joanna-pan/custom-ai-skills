@@ -32,6 +32,7 @@ Run this checklist against the rendered artifact, not only against source code o
 - No clipping, overlap, orphaned labels, crossed text, or off-canvas elements.
 - The longest word and longest label fit their containers.
 - Every text field is checked after final copy insertion: the rendered text bounds fit within the container on both axes and preserve the intended left, right, top, and bottom padding. If not, enlarge the container, rewrap the text, or adjust typography before delivery.
+- Text blocks with the same semantic role use the same type size, weight, and line-height. Exceptions are allowed only when they are an intentional hierarchy choice, not a last-minute fit workaround.
 - Body text remains readable at the actual publication size.
 - Heading levels are visually distinct and limited.
 - Connectors clearly attach to their intended nodes.
